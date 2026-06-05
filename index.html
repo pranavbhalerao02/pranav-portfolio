@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pranav Portfolio</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h1 class="logo">PRANAV</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-left">
+
+            <p class="small-text">FULL STACK DEVELOPER</p>
+
+            <h1>
+                Building
+                <span>Modern</span>
+                Digital
+                Experiences.
+            </h1>
+
+            <p class="hero-description">
+                I create modern websites,
+                interactive experiences and creative projects.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#work" class="btn primary">View Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+            <div class="image-wrapper">
+                <img src="Profile Image.jpg" alt="profile">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <div class="section-header">
+            <p>ABOUT</p>
+            <h2>Who I Am</h2>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I'm Pranav Bhalerao, a fresher full stack developer with a passion for both
+                web and game development. Over the past year I've been independently building
+                real projects — from immersive 3D horror games in Unity to responsive, animated
+                websites from scratch — driven by curiosity and a love for creating things that
+                feel alive on screen.
+            </p>
+            <br>
+            <p>
+                My core skills include Unity &amp; C#, HTML, CSS, and JavaScript. I enjoy working
+                across the full spectrum of digital creation — whether that's writing game logic,
+                modelling a 3D environment, or crafting a smooth, pixel-perfect web experience.
+            </p>
+            <br>
+            <p>
+                I'm currently looking for a job or internship where I can grow and contribute,
+                while continuing to build personal projects that sharpen my craft.
+            </p>
+            <br>
+            <p>
+                Outside of coding — I'm a horror game enthusiast (which is why my first Unity
+                project was a horror game 👻), a cricket player, and someone who genuinely
+                learns through playing games — picking up design patterns, storytelling, and
+                problem-solving just by paying attention.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="work" id="work">
+
+        <div class="section-header">
+            <p>PROJECTS</p>
+            <h2>Featured Work</h2>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="game">Games</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <div class="project-card" data-category="game" data-id="0" tabindex="0" role="button">
+                <div class="project-number">01</div>
+                <h3>3D Horror Game</h3>
+                <p>Built with Unity Engine featuring immersive gameplay, AI enemies and cinematic atmosphere.</p>
+                <span>Unity / C# / Blender</span>
+                <div class="card-arrow">
+                    View Details
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project-card" data-category="web" data-id="1" tabindex="0" role="button">
+                <div class="project-number">02</div>
+                <h3>Animated Portfolio</h3>
+                <p>Smooth scrolling portfolio website with animations, transitions and responsive design.</p>
+                <span>HTML / CSS / JavaScript</span>
+                <div class="card-arrow">
+                    View Details
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project-card" data-category="game" data-id="2" tabindex="0" role="button">
+                <div class="project-number">03</div>
+                <h3>Casino Slot Game Prototype</h3>
+                <p>Interactive slot machine game with animations, sound effects and game logic.</p>
+                <span>Unity / UI Animation</span>
+                <div class="card-arrow">
+                    View Details
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </div>
+            
+            <!-- PROJECT 4 -->
+            <div class="project-card" data-category="web" data-id="3" tabindex="0" role="button">
+                <div class="project-number">04</div>
+                <h3>Cafe Arosha Website</h3>
+                <p>Well Working fully functional web application for Cafe Arosha with frontend and backend components.</p>
+                <span>React,Spring Boot,Java,JWT,CSS,Rest API</span>
+                <div class="card-arrow">
+                    View Details
+                    <svg viewBox="0 0 24 24" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="section-header">
+            <p>CONTACT</p>
+            <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="contact-layout">
+
+            <!-- LEFT — contact info -->
+            <div class="contact-info">
+
+                <p class="contact-intro">
+                    I'm open to internships, freelance projects and full-time roles.
+                    Drop me a message or reach out directly — I reply fast.
+                </p>
+
+                <!-- Phone -->
+                <a href="tel:+919168105615" class="contact-card">
+                    <div class="cc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                                     A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67
+                                     A2 2 0 0 1 3.41 1h3a2 2 0 0 1 2 1.72
+                                     c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91
+                                     a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45
+                                     c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="cc-text">
+                        <span class="cc-label">PHONE</span>
+                        <span class="cc-value">+91 9168105615</span>
+                    </div>
+                    <div class="cc-arrow">↗</div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:pranavbhalerao615@gmail.com" class="contact-card">
+                    <div class="cc-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <div class="cc-text">
+                        <span class="cc-label">EMAIL</span>
+                        <span class="cc-value">pranavbhalerao615@gmail.com</span>
+                    </div>
+                    <div class="cc-arrow">↗</div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/pranavbhalerao02/" target="_blank" rel="noopener" class="contact-card">
+                    <div class="cc-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </div>
+                    <div class="cc-text">
+                        <span class="cc-label">LINKEDIN</span>
+                        <span class="cc-value">linkedin.com/in/pranavbhalerao02</span>
+                    </div>
+                    <div class="cc-arrow">↗</div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://www.github.com/pranavbhalerao02/" target="_blank" rel="noopener" class="contact-card">
+                    <div class="cc-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385
+                                     .6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235
+                                     -3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                                     -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23
+                                     1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605
+                                     -2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                                     -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23
+                                     .96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23
+                                     .66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                                     0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22
+                                     0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57
+                                     A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div class="cc-text">
+                        <span class="cc-label">GITHUB</span>
+                        <span class="cc-value">github.com/pranavbhalerao02</span>
+                    </div>
+                    <div class="cc-arrow">↗</div>
+                </a>
+
+            </div>
+
+            <!-- RIGHT — contact form -->
+            <form class="contact-form" action="https://formspree.io/f/mpqezoqn" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea rows="6" name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+
+            <div class="footer-left">
+                <span class="footer-logo">PRANAV</span>
+                <span class="footer-copy">© 2026 Pranav Bhalerao. All rights reserved.</span>
+            </div>
+
+            <div class="footer-socials">
+                <a href="tel:+919168105615" class="footer-social-btn" title="Call me">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                                 A19.5 19.5 0 0 1 4.5 12a19.79 19.79 0 0 1-3.07-8.67
+                                 A2 2 0 0 1 3.41 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81
+                                 a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27
+                                 a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/>
+                    </svg>
+                </a>
+                <a href="mailto:pranavbhalerao615@gmail.com" class="footer-social-btn" title="Email me">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/pranavbhalerao02/" target="_blank" rel="noopener" class="footer-social-btn" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+                <a href="https://www.github.com/pranavbhalerao02/" target="_blank" rel="noopener" class="footer-social-btn" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385
+                                 .6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235
+                                 -3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+                                 -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23
+                                 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605
+                                 -2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+                                 -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23
+                                 .96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23
+                                 .66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+                                 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22
+                                 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57
+                                 A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- PROJECT MODAL OVERLAY -->
+    <div class="overlay" id="overlay">
+        <div class="modal" id="modal"></div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+
+</body>
+</html>
