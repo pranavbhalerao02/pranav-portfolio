@@ -140,7 +140,7 @@ const projects = [
     ],
     accentColor: '#ffb703',
     itch: '',
-    github: 'https://github.com/yourusername/cafe-arosha',
+    github: '',
 }
 ];
 
